@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styleOutput.css">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/js.css">
+    <title>DGI 2023</title>
+    <script src="./js/app.js"></script>
+    <script src="./js/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', './js/particlesjs.config.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</head>
+<body class=" bg bg-cover bg-opacity-50"  >
+    <div class="absolute h-screen w-screen"  id="particles-js"></div>
+    <div class=" bg-black h-screen bg-opacity-10 p-1 flex items-center justify-center">
+        <div class=" w-96  md:border-2 border-sky-400 post md:p-6  rounded-2xl max-[414px]:border-0 max-[414px]:w-screen z-10 ">
+            <form action="" id="form" class="space-y-2" method="post">
+
+                <h1 class=" font-extrabold text-4xl text-sky-400 font-sans max-[414px]:text-5xl max-[414px]:hidden">S'incrire <i class="fa-solid fa-circle-plus text-4xl max-[414px]:text-5xl"></i> </h1>
+
+                <div class=" w-full flex justify-center items-center relative">
+                    <input type="file" accept="image/*" id="avatar" class="hidden" required>
+	
+		    <label for="avatar">
+                        <div class=" w-full cursor-pointer ">
+                            <img src="./image/avatarcat.jpg" alt="Avatar" id="viewavatar" class=" w-32 h-32 rounded-full border-4 border-sky-400 ">
+                            <i class="fa-solid fa-download text-white bg-sky-400 p-2 rounded-full relative -top-11 left-24"></i>
+                        </div>
+                    </label>
+                  </div>
+		  <div id="popup" class="hidden" > <h3>METTEZ UNE PHOTO SVP !!!</h3></div>
+		
+		           
+		<div  class=" w-full text-gray-300 focus:text-sky-400 text-semibold relative">
+                    <input type="text" name="prenom" id="prenom" class=" w-full bg-transparent p-2 border-2 border-gray-300 rounded-lg outline-none focus:border-sky-400 focus:text-sky-400 block " required>
+                    <label for="prenom" class="absolute -top-6 font-semibold"><i class="fa-sharp fa-solid fa-signature"></i> Prénom</label>
+                </div>
+                <br>
+
+                <div  class=" w-full  text-gray-300 relative">
+                    <input type="text" name="nom" id="nom" class=" w-full bg-transparent p-2 border-2 border-gray-300 outline-none focus:border-sky-400 focus:text-sky-400 rounded-lg  block " required >
+                    <label for="nom" class="absolute -top-6 font-semibold"><i class="fa-sharp fa-solid fa-signature"></i>  Nom</label>
+                </div>
+                <br>
+
+                <div  class=" w-full  text-gray-300 relative ">
+                    <input type="tel" name="tel" id="tel" class=" w-full bg-transparent p-2 border-2 border-gray-300 outline-none focus:border-sky-400 focus:text-sky-400 rounded-lg  block " required>
+                    <label for="tel" class="absolute -top-6 font-semibold"><i class="fa-solid fa-phone"></i> Téléphone </label>
+                </div>
+                <br>
+
+                <div  class=" w-full  text-gray-300 relative">
+                    <input type="password" name="mdp" id="mdp" class=" w-full bg-transparent p-2 border-2 border-gray-300 outline-none focus:border-sky-400 focus:text-sky-400 rounded-lg  block " required>
+                    <label for="mdp" class="absolute -top-6 font-semibold"><i class="fa-sharp fa-solid fa-lock"></i> Mot de passe </label>
+                </div>
+                <br>
+
+                <div class=" w-full text-gray-300 ">
+                    <select class=" w-full bg-transparent border-2 border-gray-300 rounded-lg p-2 focus:border-sky-400">
+                        <option value="">Sélectioner une option </option>
+                        <option value="INF">Informatique</option>
+                        <option value="TER">Télécoms & Réseaux</option>
+                    </select>                                                                                                                                           
+                </div>
+                <br>
+
+                <div class="text-gray-300  ">
+                    <label for="sexe" class="font-semibold text-gray-300">Sexe <i class="fa-solid fa-mars-and-venus"></i> :</label><br>
+                    <input type="radio" id="sexe" name="sexe" value="M"> Homme &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="sexe" name="sexe" value="F"> Femme &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <br>
+
+                <div class=" w-full text-center">
+                    <input type="submit" value="Soumettre" id="submit-button" class=" border-2 border-sky-400 font-bold text-sky-400 px-6 py-2 rounded-full text-center uppercase hover:text-white hover:bg-sky-400 cursor-pointer">
+		    <audio id="audio" src="./audio/sirou.mp3" ></audio>
+                </div> 
+
+            </form>
+        </div>
+    </div>
+ 
+  <script src="./js/popup.js"></script>
+   
+</body>
+</html>
+<script src="./js/script.js"></script>
+
+

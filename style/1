@@ -1,0 +1,6 @@
+#popup{
+    width:30%;
+    border:solid;
+    color:red;
+    z-index:5:
+}
